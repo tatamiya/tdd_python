@@ -7,11 +7,11 @@ jobs:
       - checkout
       - run:
         name: install dependencies
-        command: |
+        commands: |
          python3 -m venv venv
          .venv/bin/activate
       - run:
         name: run tests
-        command: |
+        commands: |
          .venv/bin/activate
          pytest
